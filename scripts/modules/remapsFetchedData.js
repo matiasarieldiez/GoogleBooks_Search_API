@@ -13,7 +13,7 @@ export const remapFetchedData = async (fetchedData) => {
                 "imageLinks" in volumeInfo
                     ? volumeInfo.imageLinks.smallThumbnail ||
                       volumeInfo.imageLinks.thumbnail
-                    : "Image unavailable",
+                    : "",
             description: volumeInfo.description || "Description unavailable.",
         };
     });
